@@ -22,12 +22,14 @@ import pygame
 from pygame.locals import *
 import pickle
 from random import randint, choice
+import os
 
 # Inisialization
 pygame.init()
 pygame.mixer.init()
 font = pygame.font.SysFont(None, 24)
 clock = pygame.time.Clock()
+os.makedirs('Data', exist_ok=True)
 
 # Colors
 white = (255, 255, 255)
